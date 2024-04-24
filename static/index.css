@@ -1,3 +1,4 @@
+
 .ap-container {
   max-width: 100%;
   padding: 0 20px;
@@ -968,7 +969,7 @@
   height: 28px;
 }
 .ap-frame126 {
-  gap: 62px;
+  gap: 29px;
   top: 103px;
   left: 326px;
   display: flex;
@@ -1949,7 +1950,7 @@
   position: absolute;
 }
 .ap-frame123 {
-  gap: 90px;
+  gap: 250px;
   top: 251px;
   left: 128px;
   width: 1240px;
@@ -2000,7 +2001,7 @@
 }
 .ap-group1140 {
   width: 1240px;
-  height: 150px;
+  /*! height: 150px; */
   display: flex;
   position: relative;
   align-items: flex-start;
@@ -4790,7 +4791,7 @@ button:hover {
   .ap-frame47 {
     gap: 20px;
     top: 0px;
-    left: 953.25px;
+    /*! left: 953.25px; */
     width: 286.75px;
     display: flex;
     position: absolute;
@@ -5388,7 +5389,7 @@ button:hover {
       align-items: center;
       width: 100%;  /* Растягиваем на всю ширину доступного пространства */
       height: 70px; /* Высота меню */
-      position: relative; /* Позиционируем относительно родителя */
+       /* Позиционируем относительно родителя */
     }
 
     .ap-text010 {
@@ -6628,11 +6629,12 @@ button:hover {
     }
     .ap-refrigeratorappliance {
       width: fit-content;
-      height: 100%;
+      height: 50px;
       display: flex;
       position: relative;
       align-items: center;
       flex-shrink: 0;
+      width: 35%;
     }
     .ap-frame135 {
       top: 0px;
@@ -7211,13 +7213,13 @@ button:hover {
       height: 150px;
       display: flex;
       position: relative;
-      align-items: flex-start;
+      align-items: center;
       flex-shrink: 1;
     }
     .ap-frame44 {
       gap: 20px;
       top: 0px;
-      left: 50px;
+      left: 10%;
       width: 20%;
       display: flex;
       position: absolute;
@@ -7279,7 +7281,7 @@ button:hover {
     .ap-frame45 {
       gap: 20px;
       top: 0px;
-      left: 225px;
+      left: 30%;
       width: 20%;
       display: flex;
       position: absolute;
@@ -7341,7 +7343,7 @@ button:hover {
     .ap-frame46 {
       gap: 20px;
       top: 0px;
-      left: 400px;
+      left: 50%;
       width: 20%;
       display: flex;
       position: absolute;
@@ -7403,7 +7405,7 @@ button:hover {
     .ap-frame47 {
       gap: 20px;
       top: 0px;
-      left: 575px;
+      left: 70%;
       width: 20%;
       display: flex;
       position: absolute;
@@ -7464,21 +7466,21 @@ button:hover {
     }
     .ap-rectangle360 {
       top: 25px;
-      left: 180px;
+      left: 26%;
       width: 75px;
       height: 2px;
       position: absolute;
     }
     .ap-rectangle361 {
       top: 25px;
-      left: 355px;
+      left: 46%;
       width: 75px;
       height: 2px;
       position: absolute;
     }
     .ap-rectangle362 {
       top: 25px;
-      left: 530px;
+      left: 66%;
       width: 75px;
       height: 2px;
       position: absolute;
@@ -7550,6 +7552,9 @@ button:hover {
       box-sizing: border-box;
       /*! margin: ; */
       /*! flex-direction: column; */
+    }
+    .menu-list{
+      visibility: hidden
     }
 
     body, html {
@@ -7685,7 +7690,7 @@ button:hover {
       width: 100%;
     }
     .ap-footer{
-      top: 80.6%;
+      top: 80.5%;
       /*left: -16px;*/
       width: 100%;
 
@@ -9823,7 +9828,7 @@ button:hover {
 }
 .ap-group1140 {
   width: 1240px;
-  height: 150px;
+  /*! height: 150px; */
   display: flex;
   position: relative;
   align-items: flex-start;
@@ -20834,6 +20839,126 @@ button:hover {
 
   /* Стили для средних экранов (например, планшеты) */
   @media (max-width: 767px) {
+    .burger-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+.burger {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: none;
+  background: white;
+  width: 25px;
+  height: 26px;
+}
+.burger::before,
+.burger::after {
+  content: '';
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background: #000;
+}
+.burger::before {
+  top: 0;
+  box-shadow: 0 11px 0 #000;
+  transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+.burger::after {
+  bottom: 0;
+  transition: bottom .3s .15s, transform .3s;
+}
+.burger-checkbox:checked + .burger::before {
+  top: 11px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0,0,0,0);
+  transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+.burger-checkbox:checked + .burger::after {
+  bottom: 11px;
+  transform: rotate(-45deg);
+  transition: bottom .3s, transform .3s .15s;
+}
+.menu-list {
+  top: 0;
+  right: -42px;
+  position: absolute;
+  display: grid;
+  gap: 12px;
+  padding: 30px 40px;
+  margin: 0;
+  background: gray;
+  list-style-type: none;
+  transform: translateX(-100%);
+  transition: .3s;
+  width: 160px;
+  border-radius: 10px;
+  /*! padding-left: 50px; */
+}
+.menu-item {
+  display: block;
+  padding: 8px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+.menu-item:hover {
+  background: rgba(255,255,255,.2)
+}
+.burger-checkbox:checked ~ .menu-list {
+  transform: translateX(0);
+  z-index: 10;
+}
+
+    .menu-list {
+  background: rgb(255, 255, 255); /* Прозрачный темный фон */
+  color: #020202; /* Белый текст */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Тень для выделения */
+  border-radius: 8px; /* Скругленные углы */
+  padding: 20px; /* Дополнительное пространство вокруг текста */
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: grid;
+  gap: 12px;
+  transition: transform 0.3s ease;
+  transform: translateX(100%);
+}
+  .menu-item {
+  font-size: 20px; /* Увеличенный размер шрифта */
+  padding: 12px; /* Пространство вокруг текста */
+  text-align: center;
+  text-decoration: none;
+  color: inherit; /* Сохраняет цвет текста */
+  transition: background 0.3s ease; /* Плавный переход при наведении */
+}
+
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.2); /* Эффект при наведении */
+}
+
+.burger {
+
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  cursor: pointer;
+  visibility: visible;
+}
+.burger-checkbox:checked ~ .menu .burger {
+  position: absolute; /* Кнопка в меню */
+  top: 10px;          /* Расположение внутри меню */
+  right: 10px;
+  z-index: 2;         /* Должно быть выше остальных элементов в контейнере */
+}
+
     .ap-container {
       max-width: 100%;
       padding: 0 20px;
@@ -20846,7 +20971,7 @@ button:hover {
     }
     .ap-ap {
       width: 100%;
-      height: 6121px;
+      height: 7870px;
       display: flex;
       overflow: hidden;
       position: relative;
@@ -20875,14 +21000,15 @@ button:hover {
       position: absolute;
       align-items: flex-start;
       flex-shrink: 1;
+      object-fit: cover;
     }
     .ap-caption {
       gap: 30px;
       top: 119px;
       left: 115px;
-      width: 529px;
+      width: 70%;
       display: flex;
-      padding: 60px;
+      padding: 30px;
       position: absolute;
       align-items: flex-start;
       flex-shrink: 0;
@@ -20900,7 +21026,7 @@ button:hover {
     .ap-text {
       color: rgba(29, 29, 31, 1);
       height: auto;
-      font-size: 48px;
+      font-size: 32px;
       align-self: stretch;
       font-style: Bold;
       text-align: left;
@@ -20928,7 +21054,7 @@ button:hover {
     .ap-text002 {
       color: var(--dl-color-default-black);
       height: auto;
-      font-size: 18px;
+      font-size: 16px;
       font-style: Regular;
       text-align: left;
       font-family: Inter;
@@ -20949,7 +21075,7 @@ button:hover {
     .ap-text004 {
       color: var(--dl-color-default-black);
       height: auto;
-      font-size: 18px;
+      font-size: 16px;
       font-style: Regular;
       text-align: left;
       font-family: Inter;
@@ -20970,7 +21096,7 @@ button:hover {
     .ap-text006 {
       color: var(--dl-color-default-black);
       height: auto;
-      font-size: 18px;
+      font-size: 16px;
       font-style: Regular;
       text-align: left;
       font-family: Inter;
@@ -20989,7 +21115,7 @@ button:hover {
       justify-content: center;
       color: var(--dl-color-default-white);
       height: auto;
-      font-size: 18px;
+      font-size: 14px;
       font-style: Medium;
       text-align: left;
       font-family: Inter;
@@ -21034,20 +21160,24 @@ button:hover {
       align-items: center;
       width: 100%;  /* Растягиваем на всю ширину доступного пространства */
       height: 70px; /* Высота меню */
-      position: relative; /* Позиционируем относительно родителя */
+      position: fixed; /* Позиционируем относительно родителя */
+      z-index: 12;
+      background: white;
     }
 
     .ap-text010 {
       color: var(--dl-color-default-black);
-      font-size: 20px;
+      font-size: 18px;
       font-family: Inter;
-      padding-left: 100px;
+      padding-left: 40px;
       font-weight: 700; /* Более правильный способ задать жирность шрифта */
+      /*! width: 150%; */
     }
 
     .ap-frame39 {
       display: flex;
       gap: 25px; /* Расстояние между ссылками */
+      visibility: hidden;
     }
 
     .ap-frame39 a {
@@ -21064,7 +21194,7 @@ button:hover {
       font-style: Medium;
       text-align: left;
       font-family: Inter;
-      font-weight: 500;
+      font-weight: 700;
       line-height: normal;
       font-stretch: normal;
       text-decoration: none;
@@ -21076,7 +21206,7 @@ button:hover {
       font-style: Medium;
       text-align: left;
       font-family: Inter;
-      font-weight: 500;
+      font-weight: 700;
       line-height: normal;
       font-stretch: normal;
       text-decoration: none;
@@ -21088,7 +21218,7 @@ button:hover {
       font-style: Medium;
       text-align: left;
       font-family: Inter;
-      font-weight: 500;
+      font-weight: 700;
       line-height: normal;
       font-stretch: normal;
       text-decoration: none;
@@ -21100,7 +21230,7 @@ button:hover {
       font-style: Medium;
       text-align: left;
       font-family: Inter;
-      font-weight: 500;
+      font-weight: 700;
       line-height: normal;
       font-stretch: normal;
       text-decoration: none;
@@ -21112,7 +21242,7 @@ button:hover {
       font-style: Medium;
       text-align: left;
       font-family: Inter;
-      font-weight: 500;
+      font-weight: 700;
       line-height: normal;
       font-stretch: normal;
       text-decoration: none;
@@ -21184,7 +21314,7 @@ button:hover {
     }
     .ap-frame34 {
       gap: 20px;
-      width: 386px;
+      width: 50%;
       display: flex;
       align-items: center;
       flex-shrink: 0;
@@ -21242,7 +21372,7 @@ button:hover {
     }
     .ap-frame36 {
       gap: 20px;
-      width: 394px;
+      width: 50%;
       display: flex;
       align-items: center;
       flex-shrink: 0;
@@ -21300,7 +21430,7 @@ button:hover {
     }
     .ap-frame84 {
       gap: 20px;
-      width: 392px;
+      width: 50%;
       display: flex;
       align-items: center;
       flex-shrink: 0;
@@ -21366,7 +21496,7 @@ button:hover {
       background-color: var(--dl-color-default-blue1);
       color: var(--dl-color-default-white);
       height: auto;
-      font-size: 18px;
+      font-size: 16px;
       font-style: Medium;
       text-align: left;
       font-family: Inter;
@@ -21644,7 +21774,7 @@ button:hover {
       gap: 30px;
       top: 125px;
       left: 812px;
-      width: 100%;
+      width: 70%;
       display: flex;
       padding: 20px;
       position: absolute;
@@ -21683,7 +21813,7 @@ button:hover {
       text-align: left;
       font-family: Inter;
       font-weight: 400;
-      line-height: 32px;
+      line-height: 25px;
       font-stretch: normal;
       text-decoration: none;
     }
@@ -21854,21 +21984,22 @@ button:hover {
       text-decoration: none;
     }
     .ap-frame61 {
-      gap: 200px;
-      width: 85%;
-      display: flex;
+      gap: 50px;
+      width: 100%;
+      display: grid;
       align-items: flex-start;
       flex-shrink: 0;
     }
     .ap-office {
       gap: 20px;
-      width: 68px;
+      width: 100%;
       display: flex;
       flex-grow: 1;
       align-items: center;
       flex-shrink: 0;
       flex-direction: column;
       justify-content: space-between;
+      padding-top: 60px;
     }
     .ap-officeappliance {
       width: 52px;
@@ -21908,7 +22039,7 @@ button:hover {
     }
     .ap-phone {
       gap: 20px;
-      width: 68px;
+      width: 100%;
       display: flex;
       flex-grow: 1;
       align-items: center;
@@ -21954,7 +22085,7 @@ button:hover {
     }
     .ap-email {
       gap: 20px;
-      width: 68px;
+      width: 100%;
       display: flex;
       flex-grow: 1;
       align-items: center;
@@ -22184,7 +22315,7 @@ button:hover {
     }
     .ap-frame83 {
       gap: 30px;
-      width: 100%;
+      width: 80%;
       display: flex;
       align-items: center;
       flex-shrink: 0;
@@ -22789,7 +22920,7 @@ button:hover {
       top: 2839px;
       left: -25px;
       width: 1499px;
-      height: 871px;
+      height: 971px;
       display: flex;
       position: absolute;
       align-items: flex-start;
@@ -22856,27 +22987,32 @@ button:hover {
     }
     .ap-group1140 {
       width: 100%;
-      /*! height: ; */
+      height: 290px;
       display: grid;
       position: relative;
       align-items: center;
       flex-shrink: 0;
       flex-direction: column;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+      top: -65px;
+
+      grid-template-rows: 0; /* Автоматическая высота строк */
+      gap: 16px; /* Пространство между элементами */
+      justify-items: center;
     }
     .ap-frame44 {
       gap: 20px;
       top: 0px;
-      left: 50px;
-      width: 20%;
+      left: 7%;
+      width: 40%;
       display: flex;
       position: absolute;
       flex-grow: 1;
       align-items: center;
       flex-shrink: 0;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
+      height: 250px;
     }
     .ap-bookappliance {
       width: 47px;
@@ -22927,35 +23063,35 @@ button:hover {
       font-stretch: normal;
       text-decoration: none;
     }
-    .ap-frame45 {
-      gap: 20px;
-      top: 0px;
-      left: 225px;
-      width: 20%;
-      display: flex;
-      position: absolute;
-      flex-grow: 1;
-      align-items: center;
-      flex-shrink: 0;
-      flex-direction: column;
-      justify-content: center;
+    .ap-frame45 {          gap: 20px;
+          top: 0;
+          left: 55%;
+          width: 40%;
+          display: flex;
+          position: absolute;
+          flex-grow: 1;
+          align-items: center;
+          flex-shrink: 0;
+          flex-direction: column;
+          justify-content: center;
+          height: 250px;
     }
     .ap-identifyappliance {
-      width: 52px;
-      height: 52px;
-      display: flex;
-      position: relative;
-      align-items: flex-start;
-      flex-shrink: 0;
-      border-radius: 10px;
-      background-color: var(--dl-color-default-blue1);
+          width: 47px;
+          height: 47px;
+          display: flex;
+          position: relative;
+          align-items: flex-start;
+          flex-shrink: 0;
+          border-radius: 10px;
+          background-color: var(--dl-color-default-blue1);
     }
     .ap-list-magnifying-glass {
-      top: 10px;
-      left: 10px;
-      width: 32px;
-      height: 32px;
-      position: absolute;
+ top: 6px;
+left: 10px;
+ width: 32px;
+height: 32px;
+position: absolute;
     }
     .ap-frame431 {
       gap: 15px;
@@ -22967,7 +23103,7 @@ button:hover {
       color: var(--dl-color-default-white);
       width: 100%;
       height: auto;
-      font-size: 14px;
+      font-size: 12px;
       font-style: Semi Bold;
       text-align: center;
       font-family: Inter;
@@ -22980,7 +23116,7 @@ button:hover {
       color: var(--dl-color-default-white);
       width: 100%;
       height: auto;
-      font-size: 12px;
+      font-size: 10px;
       font-style: Regular;
       text-align: center;
       font-family: Inter;
@@ -22990,10 +23126,13 @@ button:hover {
       text-decoration: none;
     }
     .ap-frame46 {
+      left: 7%;
+  bottom: 0px;
+  top: 190px;
+  height: 250px;
       gap: 20px;
-      top: 0px;
-      left: 400px;
-      width: 20%;
+
+      width: 40%;
       display: flex;
       position: absolute;
       flex-grow: 1;
@@ -23003,8 +23142,8 @@ button:hover {
       justify-content: center;
     }
     .ap-technicianappliance {
-      width: 52px;
-      height: 52px;
+      width: 47px;
+      height: 47px;
       display: flex;
       position: relative;
       align-items: flex-start;
@@ -23029,7 +23168,7 @@ button:hover {
       color: var(--dl-color-default-white);
       width: 100%;
       height: auto;
-      font-size: 14px;
+      font-size: 12px;
       font-style: Semi Bold;
       text-align: center;
       font-family: Inter;
@@ -23042,7 +23181,7 @@ button:hover {
       color: var(--dl-color-default-white);
       width: 100%;
       height: auto;
-      font-size: 12px;
+      font-size: 10px;
       font-style: Regular;
       text-align: center;
       font-family: Inter;
@@ -23052,10 +23191,13 @@ button:hover {
       text-decoration: none;
     }
     .ap-frame47 {
+      left: 55%;
+    bottom: 0px;
+    height: 250px;
+    top: 190px;
       gap: 20px;
-      top: 0px;
-      left: 575px;
-      width: 20%;
+
+      width: 40%;
       display: flex;
       position: absolute;
       flex-grow: 1;
@@ -23065,8 +23207,8 @@ button:hover {
       justify-content: center;
     }
     .ap-awardappliance {
-      width: 52px;
-      height: 52px;
+      width: 47px;
+      height: 47px;
       display: flex;
       position: relative;
       align-items: flex-start;
@@ -23091,7 +23233,7 @@ button:hover {
       color: var(--dl-color-default-white);
       width: 100%;
       height: auto;
-      font-size: 14px;
+      font-size: 12px;
       font-style: Semi Bold;
       text-align: center;
       font-family: Inter;
@@ -23104,7 +23246,7 @@ button:hover {
       color: var(--dl-color-default-white);
       width: 100%;
       height: auto;
-      font-size: 12px;
+      font-size: 10px;
       font-style: Regular;
       text-align: center;
       font-family: Inter;
@@ -23237,8 +23379,8 @@ button:hover {
 
     .form-layout {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
       gap: 10px;
+      grid-template-columns: repeat(1, 1fr);
     }
 
     .form-group {
@@ -23300,7 +23442,7 @@ button:hover {
 
     }
     .ap-about{
-      top: 780px;
+      top: 880px;
       /*left: 12.5%;*/
       width: 100%;
       right: 0px;
@@ -23318,7 +23460,7 @@ button:hover {
     }
     .ap-testimonials{
       /*left: 12.5%;*/
-      top: 4420px;
+      top: 5190px;
       left: 0px;
       width: 100%;
     }
@@ -23331,12 +23473,13 @@ button:hover {
 
     }
     .ap-hero1{
-      top: 1750px;
+      top: 2150px;
       left: 0px;
       width: 100%;
     }
     .ap-footer{
-      top: 80.6%;
+      top: 77.3%;
+      z-index: 1;
       /*left: -16px;*/
       width: 100%;
 
@@ -23345,7 +23488,7 @@ button:hover {
       top: 250px;
       left: 0px;
       width: 100%;
-      height: 969px;
+      height: 1469px;
       background: #37445e;
     }
     .ap-rectangle359{
@@ -23355,7 +23498,7 @@ button:hover {
       height: 100%;
     }
     .ap-copyright{
-      top: 90%;
+      top: 100%;
       left: 0px;
       width: 100%;
       height: 70px;
@@ -23367,7 +23510,7 @@ button:hover {
       width: 100%;
     }
     .ap-services{
-      top: 2500px;
+      top: 2900px;
       left: 0px;
       width: 100%;
       height: 495px;
@@ -23382,10 +23525,10 @@ button:hover {
       flex-direction: column;
     }
     .ap-order{
-      top: 3500px;
+      top: 4000px;
       left: 0px;
       width: 100%;
-      /*height: auto;*/
+      /*! height: auto; */
       background: #37445e;
 
     }
@@ -23394,7 +23537,7 @@ button:hover {
       right: 0px;
       width: 100%;
       left: 0px;
-      /*height: auto;*/
+      /*! height: ; */
       background: #37445e;
     }
     .ap-frame123{
@@ -23403,14 +23546,19 @@ button:hover {
       left: 0px;
       display: flex;
       flex-direction: column;
+      background: #37445e;
+      height: 90%;
     }
     .ap-hero{
       left: 0px;
       width: 100%;
     }
     .ap-navbar{
-      left: -35px;
+      left: 0px;
       width: 100%;
+      position: fixed;
+      background: white;
+      z-index: 12;
     }
     .ap-unsplash-b3mv-is6a-g-vw{
       top: 5px;
@@ -23477,3 +23625,22 @@ button:hover {
 }
 
 }
+@media (min-width: 768px) and (max-width: 1240px) {
+  @media (min-width: 768px) and (max-width: 1240px) {
+    .ap-refrigeratorappliance{
+width: 35%
+height: 50px
+}
+    .menu{
+      display: none
+    }
+
+}}
+@media(min-width: 1241px){
+  .menu{
+      display: none
+    }
+  .map{
+  width:400px;}
+}
+

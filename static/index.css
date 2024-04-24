@@ -1438,10 +1438,10 @@
   flex-shrink: 0;
 }
 .ap-frame135 {
-  top: 0px;
-  left: 0px;
-  width: 35px;
-  height: 50px;
+  top: -25px;
+  left: -29px;
+  width: 100px;
+  height: 100px;
   position: absolute;
 }
 .ap-text098 {
@@ -1494,10 +1494,10 @@
   flex-shrink: 0;
 }
 .ap-frame137 {
-  top: 0px;
-  left: 0px;
-  width: 50px;
-  height: 50px;
+  top: -10px;
+  left: -11px;
+  width: 79px;
+  height: 58px;
   position: absolute;
 }
 .ap-text100 {
@@ -1544,8 +1544,9 @@
   background-color: var(--dl-color-default-blue1);
 }
 .ap-washerappliance {
-  width: 35px;
-  height: 50px;
+  width: 109px;
+  height: 59px;
+  top: -30px;
 }
 .ap-text102 {
   color: var(--dl-color-default-white);
@@ -1581,7 +1582,7 @@
   /*width: 156px;*/
   /*height: 156px;*/
   display: flex;
-  padding: 25px 40px;
+  padding: 34px 31px;
   position: absolute;
   align-items: center;
   flex-shrink: 0;
@@ -1590,8 +1591,8 @@
   background-color: var(--dl-color-default-blue1);
 }
 .ap-dryerappliance {
-  width: 40px;
-  height: 50px;
+  width: 66px;
+  height: 53px;
 }
 .ap-text104 {
   color: var(--dl-color-default-white);
@@ -1622,12 +1623,12 @@
 }
 .ap-frame28 {
   gap: 10px;
-  top: 0px;
+  top: 13px;
   left: 0px;
   /*width: 156px;*/
   /*height: 156px;*/
   display: flex;
-  padding: 25px 40px;
+  padding: 25px 33px;
   position: absolute;
   align-items: center;
   flex-shrink: 0;
@@ -1644,10 +1645,10 @@
   flex-shrink: 0;
 }
 .ap-frame141 {
-  top: 0px;
-  left: 0px;
-  width: 45px;
-  height: 30px;
+  top: -16px;
+  left: -28px;
+  width: 104px;
+  height: 75px;
   position: absolute;
 }
 .ap-text106 {
@@ -1702,8 +1703,8 @@
   background-color: var(--dl-color-default-blue1);
 }
 .ap-freezerappliance {
-  width: 50px;
-  height: 50px;
+  width: 76px;
+  height: 54px;
 }
 .ap-text108 {
   color: var(--dl-color-default-white);
@@ -1750,8 +1751,8 @@
   background-color: var(--dl-color-default-blue1);
 }
 .ap-rangehoodappliance {
-  width: 50px;
-  height: 50px;
+  width: 94px;
+  height: 52px;
 }
 .ap-text110 {
   color: var(--dl-color-default-white);
@@ -1806,10 +1807,10 @@
   flex-shrink: 0;
 }
 .ap-frame145 {
-  top: 0px;
-  left: 0px;
-  width: 45px;
-  height: 30px;
+  top: -10px;
+  left: -25px;
+  width: 100px;
+  height: 75px;
   position: absolute;
 }
 .ap-text112 {
@@ -1847,7 +1848,7 @@
   /*width: 156px;*/
   /*height: 156px;*/
   display: flex;
-  padding: 25px 0px;
+  padding: 25px 32px;
   position: absolute;
   align-items: center;
   flex-shrink: 0;
@@ -1857,8 +1858,8 @@
   background-color: var(--dl-color-default-blue1);
 }
 .ap-gasappliance {
-  width: 37px;
-  height: 50px;
+  width: 75px;
+  height: 36px;
 }
 .ap-text114 {
   color: var(--dl-color-default-white);
@@ -1913,10 +1914,10 @@
   flex-shrink: 0;
 }
 .ap-frame148 {
-  top: 0px;
-  left: 0px;
-  width: 40px;
-  height: 40px;
+  top: -10px;
+  left: -27px;
+  width: 100px;
+  height: 74px;
   position: absolute;
 }
 .ap-text116 {
@@ -22413,10 +22414,10 @@ button:hover {
       right: 17px;
     }
     .ap-frame135 {
-      top: 0px;
-      left: 0px;
-      width: 36px;
-      height: 80%;
+      top: -17px;
+      left: -20px;
+      width: 75px;
+      height: 100px;
       /*! position: absolute; */
     }
     .ap-text098 {
@@ -22469,9 +22470,9 @@ button:hover {
       flex-shrink: 0;
     }
     .ap-frame137 {
-      top: 0px;
-      left: 0px;
-      width: 50px;
+      top: 5px;
+      left: -12px;
+      width: 75px;
       height: 50px;
       position: absolute;
     }
@@ -22504,8 +22505,8 @@ button:hover {
       position: absolute;
     }
     .ap-frame261 {
-      gap: 10px;
-      top: 0px;
+      gap: 0px;
+      top: 15px;
       left: 2px;
       /*! width: 90px; */
       /*! height: auto; */
@@ -22520,13 +22521,13 @@ button:hover {
       right: 2px;
     }
     .ap-washerappliance {
-      width: 35px;
+      width: 50px;
       height: 50px;
     }
     .ap-text102 {
       color: var(--dl-color-default-white);
       height: auto;
-      font-size: 14px;
+      font-size: 11px;
       font-style: Medium;
       text-align: center;
       font-family: Inter;
@@ -22551,9 +22552,9 @@ button:hover {
       position: absolute;
     }
     .ap-frame27 {
-      gap: 10px;
-      top: 5px;
-      left: 5px;
+      gap: 0px;
+      top: 15px;
+      left: 3px;
       /*width: 156px;*/
       /*height: 156px;*/
       display: flex;
@@ -22566,7 +22567,7 @@ button:hover {
       background-color: var(--dl-color-default-blue1);
     }
     .ap-dryerappliance {
-      width: 40px;
+      width: 70px;
       height: 50px;
     }
     .ap-text104 {
@@ -22600,9 +22601,9 @@ button:hover {
       align-content: center;
     }
     .ap-frame28 {
-      gap: 10px;
+      gap: 19px;
       top: 5px;
-      left: 5px;
+      left: 3px;
       /*! width: 100px; */
       /*! height: 100%; */
       display: flex;
@@ -22623,10 +22624,10 @@ button:hover {
       flex-shrink: 0;
     }
     .ap-frame141 {
-      top: 0px;
-      left: 0px;
-      width: 45px;
-      height: 30px;
+      top: -11px;
+      left: -16px;
+      width: 75px;
+      height: 70px;
       position: absolute;
     }
     .ap-text106 {
@@ -22667,7 +22668,7 @@ button:hover {
     }
     .ap-frame241 {
       gap: 10px;
-      top: 5px;
+      top: 13px;
       left: 5px;
       /*width: 156px;*/
       /*height: 156px;*/
@@ -22682,8 +22683,8 @@ button:hover {
       background-color: var(--dl-color-default-blue1);
     }
     .ap-freezerappliance {
-      width: 50px;
-      height: 50px;
+      width: 75px;
+      height: 40px;
     }
     .ap-text108 {
       color: var(--dl-color-default-white);
@@ -22714,8 +22715,8 @@ button:hover {
       position: absolute;
     }
     .ap-frame251 {
-      gap: 10px;
-      top: 0.25px;
+      gap: 0px;
+      top: 10px;
       left: 5px;
       /*width: 156px;*/
       /*height: 156px;*/
@@ -22731,8 +22732,8 @@ button:hover {
       right: 5px;
     }
     .ap-rangehoodappliance {
-      width: 50px;
-      height: 50px;
+      width: 90px;
+      height: 55px;
     }
     .ap-text110 {
       color: var(--dl-color-default-white);
@@ -22763,8 +22764,8 @@ button:hover {
       position: absolute;
     }
     .ap-frame262 {
-      gap: 10px;
-      top: 5px;
+      gap: 0px;
+      top: 9px;
       left: 5px;
       /*width: 156px;*/
       /*height: 156px;*/
@@ -22789,9 +22790,9 @@ button:hover {
     }
     .ap-frame145 {
       top: 0px;
-      left: 0px;
-      width: 45px;
-      height: 30px;
+      left: -12px;
+      width: 70px;
+      height: 60px;
       position: absolute;
     }
     .ap-text112 {
@@ -22823,8 +22824,8 @@ button:hover {
       position: absolute;
     }
     .ap-frame271 {
-      gap: 10px;
-      top: 0.25px;
+      gap: 13px;
+      top: 18px;
       left: 5px;
       /*width: 156px;*/
       /*height: 156px;*/
@@ -22840,8 +22841,8 @@ button:hover {
       right: 5px;
     }
     .ap-gasappliance {
-      width: 37px;
-      height: 50px;
+      width: 50px;
+      height: 32px;
     }
     .ap-text114 {
       color: var(--dl-color-default-white);
@@ -22897,10 +22898,10 @@ button:hover {
       flex-shrink: 0;
     }
     .ap-frame148 {
-      top: 0px;
-      left: 0px;
-      width: 40px;
-      height: 40px;
+      top: -8px;
+      left: -18px;
+      width: 80px;
+      height: 70px;
       position: absolute;
     }
     .ap-text116 {

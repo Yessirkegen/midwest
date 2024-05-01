@@ -29,12 +29,11 @@
   align-items: flex-start;
   flex-shrink: 0;
   background-size: cover;
-  background-image: url("public/external/tq_gr5bnh6jxh-4avgo-700h.png");
 }
 .ap-image1 {
   top: 0px;
   left: 0px;
-  width: 1479px;
+  width: 100%;
   height: 690px;
   display: flex;
   position: absolute;
@@ -1577,12 +1576,12 @@
 }
 .ap-frame27 {
   gap: 10px;
-  top: 0px;
+  top: 12px;
   left: 0px;
   /*width: 156px;*/
   /*height: 156px;*/
   display: flex;
-  padding: 34px 31px;
+  padding: 22px 30px;
   position: absolute;
   align-items: center;
   flex-shrink: 0;
@@ -1623,12 +1622,12 @@
 }
 .ap-frame28 {
   gap: 10px;
-  top: 13px;
-  left: 0px;
+  top: 18px;
+  left: 2px;
   /*width: 156px;*/
   /*height: 156px;*/
   display: flex;
-  padding: 25px 33px;
+  padding: 19px 30px;
   position: absolute;
   align-items: center;
   flex-shrink: 0;
@@ -1645,7 +1644,7 @@
   flex-shrink: 0;
 }
 .ap-frame141 {
-  top: -16px;
+  top: -15px;
   left: -28px;
   width: 104px;
   height: 75px;
@@ -20990,7 +20989,6 @@ button:hover {
       align-items: flex-start;
       flex-shrink: 0;
       background-size: cover;
-      background-image: url("public/external/tq_gr5bnh6jxh-4avgo-700h.png");
     }
     .ap-image1 {
       top: 0px;

@@ -21917,6 +21917,7 @@ button:hover {
       flex-shrink: 0;
       justify-content: space-between;
       right: 50px;
+      visibility: hidden;
     }
     .ap-rifacebookfill {
       width: 28px;
@@ -23000,7 +23001,7 @@ button:hover {
       justify-items: center;
     }
     .ap-frame44 {
-      gap: 20px;
+      gap: 10px;
       top: 0px;
       left: 7%;
       width: 40%;
@@ -23062,7 +23063,7 @@ button:hover {
       font-stretch: normal;
       text-decoration: none;
     }
-    .ap-frame45 {          gap: 20px;
+    .ap-frame45 {          gap: 10px;
           top: 0;
           left: 55%;
           width: 40%;
@@ -23093,7 +23094,7 @@ height: 32px;
 position: absolute;
     }
     .ap-frame431 {
-      gap: 15px;
+      gap: 8px;
       display: flex;
       align-items: flex-start;
       flex-direction: column;
@@ -23127,9 +23128,9 @@ position: absolute;
     .ap-frame46 {
       left: 7%;
   bottom: 0px;
-  top: 190px;
+  top: 204px;
   height: 250px;
-      gap: 20px;
+      gap: 8px;
 
       width: 40%;
       display: flex;
@@ -23193,8 +23194,8 @@ position: absolute;
       left: 55%;
     bottom: 0px;
     height: 250px;
-    top: 190px;
-      gap: 20px;
+    top: 204px;
+      gap: 8px;
 
       width: 40%;
       display: flex;
